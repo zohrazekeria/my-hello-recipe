@@ -21,3 +21,47 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+### Git & SVN Workspaces ###
+.git/
+.svn/
+
+# Java Binaries
+*.[Jj][Aa][Rr]
+*.[Ww][Aa][Rr]
+*.[Ee][Aa][Rr]
+*.[Cc][Ll][Aa][Ss][Ss]
+
+### Linux ###
+# Linux Installer files
+*.[Rr][Pp][Mm]
+
+# Binary files
+*.[Bb][Ii][Nn]
+*.[Ss][Oo]
+
+
+### MicrosoftOffice ###
+# Excel Backup File
+*.[Xx][Ll][Kk]
+
+# Visio autosave temporary files
+*.~vsdx
+.vscode
+.vs/
+
+# STS (Spring Tool Suite)
+.springBeans
+.factorypath
+
+### intellij ###
+.idea
+*.iml
+
+### Maven ###
+target/
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
