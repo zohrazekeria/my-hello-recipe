@@ -16,13 +16,14 @@ public class HelloCyberLand extends Recipe {
             example = "com.hello.app")
     @NonNull
     private final String fullyQualifiedClassName;
-    public String getFullyQualifiedClassName() {
-        return fullyQualifiedClassName;
-    }
 
     @JsonCreator
     public HelloCyberLand(@NonNull @JsonProperty("fullyQualifiedClassName") String fullyQualifiedClassName) {
         this.fullyQualifiedClassName = fullyQualifiedClassName;
+    }
+
+    public String getFullyQualifiedClassName() {
+        return fullyQualifiedClassName;
     }
 
     @Override
@@ -69,4 +70,4 @@ public class HelloCyberLand extends Recipe {
             return cd;
         }
     }
-    }
+}

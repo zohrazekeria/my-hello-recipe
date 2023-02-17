@@ -17,23 +17,23 @@ class HelloCyberLandTest implements RewriteTest {
     @Test
     void add_hello_method() {
         rewriteRun(
-            java(
-                """
-                    package com.something;
-        
-                    class A {
-                    }
-                """,
-                """
-                    package com.something;
-        
-                    class A {
-                        public String hello() {
-                            return "Hello CyberLand From com.something.A!";
-                        }
-                    }
-                """
-            )
+                java(
+                        """
+                                    package com.something;
+                                        
+                                    class A {
+                                    }
+                                """,
+                        """
+                                    package com.something;
+                                        
+                                    class A {
+                                        public String hello() {
+                                            return "Hello CyberLand From com.something.A!";
+                                        }
+                                    }
+                                """
+                )
         );
     }
 }
